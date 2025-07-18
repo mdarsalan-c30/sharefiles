@@ -6,7 +6,7 @@ function App() {
   const [status, setStatus] = useState('Disconnected');
 
   useEffect(() => {
-    socketRef.current = new WebSocket('wss://your-backend-service-name.onrender.com');
+    socketRef.current = new WebSocket('wss://sharefiles-x9wr.onrender.com');
 
     socketRef.current.onopen = () => setStatus('Connected ✅');
     socketRef.current.onclose = () => setStatus('Disconnected ❌');
